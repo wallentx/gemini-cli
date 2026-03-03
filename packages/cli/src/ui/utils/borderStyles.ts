@@ -120,7 +120,7 @@ export function getToolGroupBorderAppearance(
         ? theme.status.warning
         : theme.border.default;
 
-  const borderDimColor = isPending && (!isShell || !isEffectivelyFocused);
+  const borderDimColor = false;
 
   return { borderColor, borderDimColor };
 }

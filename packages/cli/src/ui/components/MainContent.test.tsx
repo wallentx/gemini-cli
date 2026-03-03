@@ -199,7 +199,7 @@ describe('getToolGroupBorderAppearance', () => {
     );
     expect(result).toEqual({
       borderColor: theme.status.warning,
-      borderDimColor: true,
+      borderDimColor: false,
     });
   });
 
@@ -258,7 +258,7 @@ describe('getToolGroupBorderAppearance', () => {
     );
     expect(result).toEqual({
       borderColor: theme.ui.symbol,
-      borderDimColor: true,
+      borderDimColor: false,
     });
   });
 

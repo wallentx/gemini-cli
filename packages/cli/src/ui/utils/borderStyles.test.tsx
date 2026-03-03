@@ -27,7 +27,7 @@ describe('getToolGroupBorderAppearance', () => {
     };
     const appearance = getToolGroupBorderAppearance(item, undefined, false, []);
     expect(appearance.borderColor).toBe(theme.status.warning);
-    expect(appearance.borderDimColor).toBe(true);
+    expect(appearance.borderDimColor).toBe(false);
   });
 
   it('should use correct color for empty slice by looking at pending items', () => {
@@ -57,7 +57,7 @@ describe('getToolGroupBorderAppearance', () => {
 
     // It should match the pendingItem appearance
     expect(appearance.borderColor).toBe(theme.status.warning);
-    expect(appearance.borderDimColor).toBe(true);
+    expect(appearance.borderDimColor).toBe(false);
   });
 
   it('should use symbol color for shell tools', () => {
@@ -74,7 +74,7 @@ describe('getToolGroupBorderAppearance', () => {
     };
     const appearance = getToolGroupBorderAppearance(item, undefined, false, []);
     expect(appearance.borderColor).toBe(theme.ui.symbol);
-    expect(appearance.borderDimColor).toBe(true);
+    expect(appearance.borderDimColor).toBe(false);
   });
 });
 
